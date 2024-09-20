@@ -12,13 +12,16 @@ public class ballsound : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
     }
+   
 
-    // Update is called once per frame
-    void OnCollisonEnter(Collision collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (audioSource != null)
         {
             audioSource.Play();
         }
+
     }
 }
